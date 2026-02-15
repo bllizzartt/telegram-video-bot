@@ -1,0 +1,13 @@
+MOCK VIDEO PLACEHOLDER
+====================
+Job ID: mock_b3eecac1124043f5
+Prompt: Prompt: make a video of me laughing
+Images: 1
+Status: ready (mock mode)
+
+To enable real video generation:
+1. Set MOCK_MODE=false in .env
+2. Add your Seedance API key
+3. Wait until Feb 24 for API access
+
+This placeholder represents where the generated video would be stored.

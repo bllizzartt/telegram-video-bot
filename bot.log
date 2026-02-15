@@ -1,0 +1,2694 @@
+2026-02-15 17:29:02,524 - __main__ - INFO - Bot initialized successfully
+2026-02-15 17:29:02,524 - __main__ - INFO - Starting bot...
+2026-02-15 17:29:02,834 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getMe "HTTP/1.1 200 OK"
+2026-02-15 17:29:02,836 - telegram.ext.Application - INFO - Application started
+2026-02-15 17:29:02,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/deleteWebhook "HTTP/1.1 200 OK"
+2026-02-15 17:29:02,871 - __main__ - INFO - Bot is running!
+2026-02-15 17:29:13,005 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:29:18,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:29:18,168 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:29:29,287 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:29:39,430 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:29:49,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:29:52,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:29:52,351 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:30:03,475 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:13,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:16,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:16,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:30:26,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:26,467 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:30:26,468 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:30:31,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:31,325 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getFile "HTTP/1.1 200 OK"
+2026-02-15 17:30:31,388 - httpx - INFO - HTTP Request: GET https://api.telegram.org/file/bot8572628843%3AAAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/photos/file_4.jpg "HTTP/1.1 200 OK"
+2026-02-15 17:30:31,512 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:30:41,272 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:47,314 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:30:47,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:30:48,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/editMessageText "HTTP/1.1 200 OK"
+2026-02-15 17:30:48,694 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:30:48,775 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:30:57,554 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:31:00,642 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:31:00,643 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:31:11,788 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:31:21,837 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:31:27,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:31:27,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/sendMessage "HTTP/1.1 200 OK"
+2026-02-15 17:31:34,878 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:31:34,879 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:31:45,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:31:56,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:32:06,060 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:32:09,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:32:09,071 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:32:20,191 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:32:30,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:32:40,467 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:32:43,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:32:43,268 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:32:54,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:04,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:14,668 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:17,374 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:33:17,375 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:33:28,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:38,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:48,676 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:33:51,651 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:33:51,652 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:34:02,796 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:34:12,934 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:34:23,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:34:25,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:34:25,859 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:34:36,995 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:34:47,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:34:57,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:35:00,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:35:00,084 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:35:11,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:35:21,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:35:31,680 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:35:34,256 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:35:34,258 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:35:45,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:35:55,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:36:05,677 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:36:08,454 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:36:08,456 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:36:19,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:36:29,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:36:39,776 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:36:42,661 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:36:42,662 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:36:53,805 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:03,943 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:14,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:16,787 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:37:16,789 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:37:27,830 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:37,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:47,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:37:50,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:37:50,952 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:38:02,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:12,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:22,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:25,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:38:25,120 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:38:36,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:46,194 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:56,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:38:59,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:38:59,284 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:39:10,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:39:20,544 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:39:30,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:39:33,475 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:39:33,476 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:39:44,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:39:54,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:40:04,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:40:07,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:40:07,658 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:40:18,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:40:28,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:40:38,884 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:40:41,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:40:41,878 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:40:52,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:03,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:13,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:15,985 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:41:15,987 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:41:27,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:37,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:47,386 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:41:50,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:41:50,160 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:42:01,210 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:11,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:21,383 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:24,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:42:24,334 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:42:35,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:45,421 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:55,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:42:58,487 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:42:58,489 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:43:09,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:43:19,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:43:29,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:43:32,760 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:43:32,762 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:43:43,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:43:53,835 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:44:03,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:44:06,951 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:44:06,953 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:44:18,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:44:28,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:44:38,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:44:41,108 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:44:41,110 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:44:52,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:02,194 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:12,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:15,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:45:15,280 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:45:26,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:36,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:46,783 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:45:49,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:45:49,565 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:46:00,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:10,745 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:20,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:23,959 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:46:23,961 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:46:35,114 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:45,457 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:55,594 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:46:58,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:46:58,134 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:47:09,213 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:47:19,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:47:29,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:47:32,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:47:32,373 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:47:43,519 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:47:53,655 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:48:03,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:48:06,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:48:06,589 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:48:17,626 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:48:27,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:48:37,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:48:40,694 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:48:40,695 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:48:51,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:01,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:12,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:14,799 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:49:14,801 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:49:25,856 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:35,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:45,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:49:48,947 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:49:48,949 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:50:00,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:10,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:20,195 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:23,172 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:50:23,174 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:50:34,320 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:44,458 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:54,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:50:57,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:50:57,275 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:51:08,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:51:18,369 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:51:28,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:51:31,490 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:51:31,492 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:51:42,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:51:52,761 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:52:02,896 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:52:05,668 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:52:05,671 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:52:16,717 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:52:26,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:52:36,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:52:39,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:52:39,975 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:52:51,026 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:01,067 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:11,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:14,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:53:14,287 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:53:25,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:35,568 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:45,706 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:53:48,473 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:53:48,475 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:53:59,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:54:09,566 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:54:19,599 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 200 OK"
+2026-02-15 17:54:22,642 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:54:22,644 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:54:28,051 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:54:28,053 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:54:33,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:54:33,651 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-15 17:54:40,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8572628843:AAFFl71Dpj3DRyAYJrCRJ66sYBGKJV3y9PA/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-15 17:54:40,511 - telegram.ext.Updater - ERROR - Exception happened while polling for updates.
+Traceback (most recent call last):
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/cortana/.openclaw/workspace/projects/telegram-video-bot/venv/lib/python3.14/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
